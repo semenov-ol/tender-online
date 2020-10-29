@@ -1,0 +1,102 @@
+.role-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: auto; }
+  @media (max-width: 715px) {
+    .role-select {
+      margin-bottom: 100px;
+      margin-top: 50px; } }
+  @media (max-width: 600px) {
+    .role-select {
+      width: 100%; } }
+  .role-select__title {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--font-color);
+    z-index: 1; }
+  .role-select__roles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 600px) {
+      .role-select__roles {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+  .role-select__text {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: var(--font-color);
+    margin: 20px 66px; }
+    @media (max-width: 630px) {
+      .role-select__text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+    .role-select__text::before, .role-select__text::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 20px;
+      width: 80px;
+      top: 20px;
+      background-repeat: no-repeat; }
+      @media (max-width: 630px) {
+        .role-select__text::before, .role-select__text::after {
+          display: none; } }
+    .role-select__text::before {
+      left: -50px;
+      background-image: url("../images/left-line.svg"); }
+    .role-select__text::after {
+      right: -50px;
+      background-image: url("../images/right-line.svg"); }
+  .role-select__roles_customer, .role-select__roles_participant {
+    width: 80px;
+    height: 80px;
+    margin-top: 12px;
+    background-repeat: no-repeat;
+    background-color: var(--field-color);
+    border-radius: 50px;
+    border: 1px solid #4BC6EC;
+    cursor: pointer;
+    z-index: 1;
+    outline: none; }
+  .role-select__roles_customer {
+    margin-top: 10px;
+    background-image: url("../images/customer.svg"); }
+    @media (max-width: 600px) {
+      .role-select__roles_customer {
+        right: 0; } }
+  .role-select__roles_participant {
+    background-image: url("../images/participant.svg");
+    background-position-x: -5px;
+    background-position-y: -5px; }
+    @media (max-width: 600px) {
+      .role-select__roles_participant {
+        left: 0; } }

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>Tender-online</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<div id="animation_container"></div>
+
+<main class="container">
+
+    <div class="search-bar">
+        <form class="search-bar__form">
+            <input
+                    placeholder="Пошук за ключовими словами"
+                    type="text"
+                    class="search-bar__input"
+            />
+            <button class="search-bar__button"></button>
+        </form>
+
+        <nav class="links">
+            <a class="link" href="#">Prozzoro.market</a>
+
+            <a class="link" href="#">Prozzoro.продажі</a>
+
+            <a class="link" href="#">Всі закупівлі</a>
+        </nav>
+    </div>
+
+    <div class="actions">
+        <ul class="actions-list">
+            <li class="actions-list__item">
+                <a
+                        class="actions-list__button actions-list__button_add"
+                ></a>
+            </li>
+
+            <li class="actions-list__item">
+                <a
+                        class="actions-list__button actions-list__button_arrow"
+                ></a>
+            </li>
+
+            <li class="actions-list__item">
+                <button
+                        class="actions-list__button actions-list__button_burger"
+                ></button>
+            </li>
+
+            <li class="actions-list__item">
+                <a
+                        class="actions-list__button actions-list__button_language"
+                ></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="role-select">
+        <h3 class="role-select__title">Перший раз тут?</h3>
+
+        <div class="role-select__roles">
+            <button id="customer" class="role-select__roles_customer"></button>
+
+            <p class="role-select__text">
+                для початку оберіть ким ви себе бачите,<br/>
+                <strong>замовником</strong> або <strong>учасником</strong>
+            </p>
+
+            <button id="participant" class="role-select__roles_participant"></button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <small class="footer__copyright">© 2020 Всі права захищено</small>
+
+        <nav class="footer__links service-links">
+            <a class="service-links__item" href="#">Про майданчик</a>
+
+            <a class="service-links__item" href="#">Регламент</a>
+
+            <a class="service-links__item" href="#">Договір</a>
+
+            <a class="service-links__item" href="#">Контакти</a>
+        </nav>
+    </div>
+
+    <div class="wrapper1" id="wrapper1">
+        <div class="md-modal md-effect" id="modal1">
+            <div class="md-customer-content__1" id="md-customer-content__1">
+                <h2 class="md-customer-content__1_title">3 факта<br/> про майданчик</h2>
+                <button class="md-modal__close-button" id="modal-close"></button>
+                <div class="content-container">
+
+                    <div class="content-container__1"></div>
+
+                    <div class="content-container__2"><strong>Tender-Online</strong> – офіційний майданчик в системі
+                        публічних закупівель Prozorro.
+                    </div>
+
+                    <div class="content-container__3">2015</div>
+
+                    <div class="content-container__4">Майданчик який було створено, і започатковано роботу у першій
+                        закупівельній хвилі
+                    </div>
+
+                    <div class="content-container__5">2017</div>
+
+                    <div class="content-container__6">У 2017 році Tender-Online приєднався до ініціативи Prozorro
+                        Продажі. (продаж та приватизація державного майна)
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="md-customer-content__2" id="md-customer-content__2">
+                <button class="md-modal__close-button2" id="modal-close-2"></button>
+                <h2 class="md-customer-content__2_title">Чому слід обрати Tender-Online</h2>
+                <h5 class="md-customer-content__2_description">
+                    Головне призначенням майданчика Tender-Online - створювати найкращі умови співпраці для бізнесу
+                    і держави. Ми знаходимося у постійному розвитку, удосконалюючи інтерфейс та нові сервіси, які
+                    зроблять вашу участі у публічних закупівлях простою та ефективною.
+                </h5>
+                <div class="advantage-container">
+                        <div class="advantage-container__1">А тому, піклуючись про наших клієнтів, ми пропонуємо низку послуг:</div>
+
+                        <div class="advantage-container__2">від аналітики до супроводу торгів, аби кожен наш клієнт мав велику статистику перемог у Prozorro</div>
+
+                        <div class="advantage-container__3">Майданчик Tender-Online завжди йде в ногу з реформою, та реалізує на майданчику всі інновації у сфері закупівель.</div>
+
+                    <div class="advantage-container__4"></div>
+                    <div class="advantage-container__5"></div>
+
+                        <div class="advantage-container__6"><strong>Переконали!</strong><br/>  де тут у вас <a class="advantage-container__6_link" href="#">реєстрація</a>?</div>
+                </div>
+            </div>
+
+            <div class="md-customer-content__3" id="md-customer-content__3">
+                <button class="md-modal__close-button3" id="modal-close-3"></button>
+
+                <h2 class="md-customer-content__3_title">Що вам це дасть</h2>
+
+                <div class="options1">
+                    <div class="options1__first-block">
+                        <h6 class="options1__first-block_title">
+                            цілодобовий доступ до системи електронних торгів
+                        </h6>
+                    </div>
+
+                    <div class="options1__second-block">
+                        <h6 class="options1__second-block_title">
+                            кваліфікована служба підтримки 24/7
+                        </h6>
+                    </div>
+
+                    <div class="options1__third-block">
+                        <h6 class="options1__third-block_title">
+                            аналітика яка доступна кожному клієнту
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="options2">
+                    <div class="options2__first-block">
+                        <h6 class="options2__first-block_title">
+                            сховище документів в рамках майданчика (все туть)
+                        </h6>
+                    </div>
+
+                    <div class="options2__second-block">
+                        <h6 class="options2__second-block_title">
+                            розумна підписка, лише потрібні тендери без зайвої мішури
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md-customer-content__4" id="md-customer-content__4">
+                <button class="md-modal__close-button4" id="modal-close-4"></button>
+
+                <h2 class="md-customer-content__4_title">Факти</h2>
+
+                <div class="fact-container">
+
+                    <div class="fact-container__1">це понад <span class="fact-container__1_tender-count">20 000</span> тендерів доступних в системі кожного дня</div>
+
+                    <div class="fact-container__2">це реальні <strong>можливості</strong> як для <strong>малого</strong>, так і для <strong>великого бізнесу</strong>, адже держава купує все, і в різних обсягах</div>
+
+                    <div class="fact-container__3">це понад <span class="fact-container__3_tender-amount">1 000 000 000</span> гривень  ринку збуту на рік</div>
+
+                    <div class="fact-container__4"><button class="fact-container__4_button">До пошуку тендерів</button></div>
+
+                    <div class="fact-container__5"><button class="fact-container__5_button">Реєстрація</button></div>
+
+                </div>
+            </div>
+
+            <div class="wrap"></div>
+
+        </div>
+
+
+    </div>
+
+    <div class="wrapper2" id="wrapper2">
+        <div class="md-modal md-effect" id="modal2">
+            <div class="md-participant-content">
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/animation.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+.actions {
+  position: fixed;
+  top: 50vh;
+  transform: translateY(-70%);
+  right: 55px;
+
+  @media (max-width: 1080px) {
+    right: 15px;
+  }
+}
+
+.actions-list {
+  margin: 0;
+
+  :not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__button {
+    height: 30px;
+    width: 30px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__button_add,
+  &__button_arrow,
+  &__button_burger,
+  &__button_language {
+    display: block;
+    background-repeat: no-repeat;
+  }
+
+  &__button_add {
+    background-image: url("../images/add.svg");
+  }
+
+  &__button_arrow {
+    background-image: url("../images/arrow.svg");
+  }
+
+  &__button_burger {
+    background-image: url("../images/burger.svg");
+    background-position-y: 10px;
+  }
+
+  &__button_language {
+    background-image: url("../images/language.svg");
+    background-position-y: 0;
+  }
+}
+
+

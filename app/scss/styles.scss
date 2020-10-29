@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import "~normalize.css/normalize";
+
+:root {
+  --field-color: #ffffff;
+  --secondary-color: #303030;
+  --font-color: #FFFFFF;
+  --footer-font-color: #4bc6ec;
+  --small-font-size: 14px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #303030;
+
+  height: 100vh;
+}
+
+@import "./search-bar";
+@import "./roles";
+@import "./footer";
+@import "./fixed-bar";
+@import "./modal";
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  flex-grow: 1;
+}
+
+@media (max-width: 960px) {
+  .container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 715px) {
+  .container {
+    padding: 0;
+  }
+}
+
+#animation_container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left:0;
+  bottom: 0;
+  z-index: 0;
+}
+

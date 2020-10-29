@@ -1,0 +1,35 @@
+.actions {
+  position: fixed;
+  top: 50vh;
+  -webkit-transform: translateY(-70%);
+  transform: translateY(-70%);
+  right: 55px; }
+  @media (max-width: 1080px) {
+    .actions {
+      right: 15px; } }
+
+.actions-list {
+  margin: 0; }
+  .actions-list :not(:last-child) {
+    margin-bottom: 15px; }
+  .actions-list__item {
+    list-style-type: none; }
+  .actions-list__button {
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer; }
+  .actions-list__button_add, .actions-list__button_arrow, .actions-list__button_burger, .actions-list__button_language {
+    display: block;
+    background-repeat: no-repeat; }
+  .actions-list__button_add {
+    background-image: url("../images/add.svg"); }
+  .actions-list__button_arrow {
+    background-image: url("../images/arrow.svg"); }
+  .actions-list__button_burger {
+    background-image: url("../images/burger.svg");
+    background-position-y: 10px; }
+  .actions-list__button_language {
+    background-image: url("../images/language.svg");
+    background-position-y: 0px; }

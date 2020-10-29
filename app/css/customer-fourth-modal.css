@@ -1,0 +1,164 @@
+.md-customer-content__4 {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  width: calc(100vw - 160px);
+  height: calc(100vh - 125px);
+  background-color: #D8F10B;
+  z-index: 0; }
+  @media (max-width: 550px) {
+    .md-customer-content__4 {
+      width: 100vw;
+      height: calc(100vh - 120px); } }
+  .md-customer-content__4_title {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--secondary-color); }
+  .md-customer-content__4:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/fourth-modal-bg.svg");
+    background-repeat: no-repeat; }
+    @media (max-width: 1150px) {
+      .md-customer-content__4:before {
+        background-position-x: -30%; } }
+    @media (max-width: 850px) {
+      .md-customer-content__4:before {
+        display: none; } }
+
+.fact-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 80px;
+  z-index: 1; }
+  @media (max-width: 1150px) {
+    .fact-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      grid-row-gap: 60px;
+      width: 90%; } }
+  .fact-container__1 {
+    grid-column: 7 / span 3; }
+  .fact-container__2 {
+    grid-column: 7 / span 5; }
+  .fact-container__3 {
+    grid-column: 5 / span 5;
+    width: 100%; }
+  .fact-container__4 {
+    grid-column: 5 / span 3; }
+    @media (max-width: 550px) {
+      .fact-container__4 {
+        width: 100%;
+        text-align: center; } }
+    .fact-container__4_button {
+      width: 330px;
+      padding: 5px;
+      border: 2px solid #30AAF7;
+      border-radius: 20px;
+      background-color: transparent;
+      font-size: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none; }
+      .fact-container__4_button:hover {
+        background-color: #30AAF7; }
+      @media (max-width: 550px) {
+        .fact-container__4_button {
+          width: 90%; } }
+  .fact-container__5 {
+    grid-column: 9 / span 2; }
+    @media (max-width: 550px) {
+      .fact-container__5 {
+        width: 100%;
+        text-align: center; } }
+    .fact-container__5_button {
+      width: 210px;
+      padding: 5px;
+      border-radius: 20px;
+      border: 2px solid #DB4356;
+      background-color: #DB4356;
+      color: var(--font-color);
+      font-size: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none; }
+      .fact-container__5_button:hover {
+        color: var(--secondary-color);
+        border: 2px solid #DB4356;
+        background-color: transparent; }
+      @media (max-width: 550px) {
+        .fact-container__5_button {
+          width: 90%; } }
+  .fact-container__1, .fact-container__2, .fact-container__3 {
+    font-size: 20px;
+    text-align: center; }
+    @media (max-width: 700px) {
+      .fact-container__1, .fact-container__2, .fact-container__3 {
+        font-size: 16px; } }
+  .fact-container__1_tender-count, .fact-container__1_tender-amount, .fact-container__3_tender-count, .fact-container__3_tender-amount {
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 10px; }
+    @media (max-width: 700px) {
+      .fact-container__1_tender-count, .fact-container__1_tender-amount, .fact-container__3_tender-count, .fact-container__3_tender-amount {
+        font-size: 36px; } }
+    .fact-container__1_tender-count:before, .fact-container__1_tender-amount:before, .fact-container__3_tender-count:before, .fact-container__3_tender-amount:before {
+      position: absolute;
+      left: -300px;
+      top: -50px;
+      font-size: 160px;
+      font-weight: 900;
+      color: #31ADFA;
+      z-index: -1;
+      opacity: 0.6;
+      -webkit-filter: blur(13px);
+      filter: blur(13px); }
+      @media (max-width: 1270px) {
+        .fact-container__1_tender-count:before, .fact-container__1_tender-amount:before, .fact-container__3_tender-count:before, .fact-container__3_tender-amount:before {
+          font-size: 100px; } }
+  .fact-container__1_tender-count:before, .fact-container__3_tender-count:before {
+    content: '20 000';
+    width: 500px; }
+    @media (max-width: 1150px) {
+      .fact-container__1_tender-count:before, .fact-container__3_tender-count:before {
+        width: 370px;
+        left: 0; } }
+  .fact-container__1_tender-amount:before, .fact-container__3_tender-amount:before {
+    content: '1 000 000 000';
+    left: -500px;
+    width: 1200px; }
+    @media (max-width: 1150px) {
+      .fact-container__1_tender-amount:before, .fact-container__3_tender-amount:before {
+        content: ' 000 000 000'; } }
+
+.md-modal__close-button4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: 15px;
+  top: 25px;
+  background-image: url("../images/close-icon.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer; }
