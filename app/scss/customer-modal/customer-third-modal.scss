@@ -190,7 +190,13 @@
   background-image: url("../../images/close-icon.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  background-position-x: 50% ;
+
   border: none;
   outline: none;
   cursor: pointer;
+
+  @media (max-width: 550px) {
+    background-size: 3rem;
+  }
 }

@@ -51,6 +51,14 @@
     border: none;
     outline: none;
     cursor: pointer;
+
+    z-index: 1;
+
+    background-position-x: 50% ;
+
+    @media (max-width: 550px) {
+    background-size: 3rem;
+    }
   }
 }
 
@@ -82,7 +90,11 @@
 .md-customer-content__1,
 .md-customer-content__2,
 .md-customer-content__3,
-.md-customer-content__4 {
+.md-customer-content__4,
+.md-participant-content__1,
+.md-participant-content__2,
+.md-participant-content__3,
+.md-participant-content__4 {
   display: flex;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -98,6 +110,8 @@
 
 @import 'participant-modal/participant-first-modal';
 @import 'participant-modal/participant-second-modal';
+//@import 'participant-modal/participant-third-modal';
+//@import 'participant-modal/participant-fourth-modal';
 
 
 

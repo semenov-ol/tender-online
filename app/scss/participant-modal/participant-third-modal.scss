@@ -1,0 +1,25 @@
+.md-participant-content__3 {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: calc(100vw - 120px);
+  height: calc(100vh - 100px);
+
+  bottom: 0;
+
+  color: var(--font-color);
+  background-color: #76D4B4;
+  border-radius: 20px;
+
+  .options1__third-block{
+    background-image: url("../../images/participant-modal/gear.svg");
+  }
+
+  .options2__first-block {
+    width: 70%;
+  }
+}
+

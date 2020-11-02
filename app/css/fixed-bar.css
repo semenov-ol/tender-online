@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .actions {
   position: fixed;
   top: 50vh;
@@ -15,18 +16,58 @@
   .actions-list__item {
     list-style-type: none; }
   .actions-list__button {
-    height: 30px;
+    height: 35px;
     width: 30px;
     background: transparent;
     border: none;
     cursor: pointer; }
-  .actions-list__button_add, .actions-list__button_arrow, .actions-list__button_burger, .actions-list__button_language {
+  .actions-list__button_registration, .actions-list__button_login, .actions-list__button_burger, .actions-list__button_language {
     display: block;
     background-repeat: no-repeat; }
-  .actions-list__button_add {
-    background-image: url("../images/add.svg"); }
-  .actions-list__button_arrow {
-    background-image: url("../images/arrow.svg"); }
+  .actions-list__button_registration, .actions-list__button_login {
+    position: relative; }
+    .actions-list__button_registration:after, .actions-list__button_login:after {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      background-color: black;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 15px;
+      text-align: center;
+      color: var(--font-color);
+      -webkit-transition: ease-out 0.3s;
+      transition: ease-out 0.3s; }
+  .actions-list__button_registration {
+    background-image: url("../images/registration.svg"); }
+    .actions-list__button_registration:after {
+      content: 'Зареєструватися';
+      width: 150px;
+      height: 35px;
+      left: 120px; }
+    .actions-list__button_registration:hover:after {
+      left: -120px;
+      -webkit-transition: ease-out 0.3s;
+      transition: ease-out 0.3s; }
+  .actions-list__button_login {
+    background-image: url("../images/login.svg");
+    background-position-x: 50%; }
+    .actions-list__button_login:after {
+      content: 'Увійти';
+      width: 100px;
+      height: 35px;
+      left: 150px; }
+    .actions-list__button_login:hover:after {
+      left: -70px;
+      -webkit-transition: ease-out 0.3s;
+      transition: ease-out 0.3s; }
   .actions-list__button_burger {
     background-image: url("../images/burger.svg");
     background-position-y: 10px; }

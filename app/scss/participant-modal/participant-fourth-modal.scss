@@ -1,0 +1,65 @@
+.md-participant-content__4 {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: calc(100vw - 160px);
+  height: calc(100vh - 125px);
+
+  bottom: 0;
+
+  color: var(--font-color);
+  background-color: #4BC6EC;
+  border-radius: 20px;
+
+  z-index: 0;
+
+  .video-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+
+    column-gap: 20px;
+
+    &__description {
+      grid-column: 2 / span 3;
+      grid-row: 4 / span 3;
+
+      font-size: 35px;
+      font-weight: 700;
+
+      color: #FAFD07;
+      text-align: center;
+    }
+
+    &__title {
+      grid-column: 7 / span 2;
+      grid-row: 2 / span 1;
+
+      font-size: 40px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    &__video {
+      grid-column: 5 / span 6;
+      grid-row: 3 / span 6;
+
+      width: 680px;
+      height: 415px;
+
+      background-image: url("../../images/participant-modal/video-test.svg");
+      background-repeat: no-repeat;
+    }
+
+    &__button {
+      grid-column: 6 / span 4;
+      grid-row: 8 / span 1;
+
+      text-align: center;
+    }
+  }
+}
+

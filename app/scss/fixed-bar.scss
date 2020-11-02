@@ -21,7 +21,7 @@
   }
 
   &__button {
-    height: 30px;
+    height: 35px;
     width: 30px;
 
     background: transparent;
@@ -29,20 +29,72 @@
     cursor: pointer;
   }
 
-  &__button_add,
-  &__button_arrow,
+  &__button_registration,
+  &__button_login,
   &__button_burger,
   &__button_language {
     display: block;
     background-repeat: no-repeat;
   }
 
-  &__button_add {
-    background-image: url("../images/add.svg");
+  &__button_registration,
+  &__button_login, {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      background-color: black;
+      border-radius: 20px;
+
+      font-weight: 700;
+      font-size: 15px;
+      text-align: center;
+      color: var(--font-color);
+
+      transition: ease-out 0.3s;
+    }
   }
 
-  &__button_arrow {
-    background-image: url("../images/arrow.svg");
+  &__button_registration {
+    background-image: url("../images/registration.svg");
+
+   &:after {
+     content: 'Зареєструватися';
+     width: 150px;
+     height:35px;
+     left: 120px;
+   }
+
+    &:hover {
+      &:after {
+        left: -120px;
+        transition: ease-out 0.3s;
+      }
+    }
+  }
+
+  &__button_login {
+    background-image: url("../images/login.svg");
+    background-position-x: 50% ;
+
+    &:after {
+      content: 'Увійти';
+      width: 100px;
+      height:35px;
+      left: 150px;
+    }
+
+    &:hover {
+      &:after {
+        left: -70px;
+        transition: ease-out 0.3s;
+      }
+    }
   }
 
   &__button_burger {

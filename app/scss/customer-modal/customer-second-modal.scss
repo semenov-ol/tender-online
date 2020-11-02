@@ -52,7 +52,7 @@
     width: 80%;
     @media (max-width: 720px) {
       width: 75%;
-      font-size: 35px;
+      font-size: 30px;
     }
   }
 
@@ -123,6 +123,7 @@
 
     @media (max-width: 500px) {
       grid-row: 1 / span 1;
+
     }
 
     }
@@ -136,7 +137,7 @@
     text-align: center;
 
     @media (max-width: 720px) {
-      font-size: 16px;
+      font-size: 15px;
     }
   }
 
@@ -157,6 +158,8 @@
     @media (max-width: 720px) {
       grid-row: 3 / span 1;
       grid-column: 3 / span 3;
+
+      font-size: 16px;
     }
 
     @media (max-width: 500px) {
@@ -290,7 +293,13 @@
   background-image: url("../../images/close-icon.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  background-position-x: 50% ;
+
   border: none;
   outline: none;
   cursor: pointer;
+
+  @media (max-width: 550px) {
+    background-size: 3rem;
+  }
 }
