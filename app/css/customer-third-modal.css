@@ -63,20 +63,20 @@
       -ms-flex-direction: column;
       flex-direction: column; } }
   .options1__first-block {
-    background-image: url("../images/third-modal/bid.svg"); }
+    background-image: url("../images/customer-modal/third-modal/bid.svg"); }
     @media (max-width: 850px) {
       .options1__first-block {
-        background-image: url("../images/third-modal/bid-outline.svg"); } }
+        background-image: url("../images/customer-modal/third-modal/bid-outline.svg"); } }
   .options1__second-block {
-    background-image: url("../images/third-modal/support.svg"); }
+    background-image: url("../images/customer-modal/third-modal/support.svg"); }
     @media (max-width: 850px) {
       .options1__second-block {
-        background-image: url("../images/third-modal/support-outline.svg"); } }
+        background-image: url("../images/customer-modal/third-modal/support-outline.svg"); } }
   .options1__third-block {
-    background-image: url("../images/third-modal/analytics.svg"); }
+    background-image: url("../images/customer-modal/third-modal/analytics.svg"); }
     @media (max-width: 850px) {
       .options1__third-block {
-        background-image: url("../images/third-modal/analytics-outline.svg"); } }
+        background-image: url("../images/customer-modal/third-modal/analytics-outline.svg"); } }
   .options1__first-block, .options1__second-block, .options1__third-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -126,15 +126,15 @@
       flex-direction: column;
       width: 90%; } }
   .options2__first-block {
-    background-image: url("../images/third-modal/files.svg"); }
+    background-image: url("../images/customer-modal/third-modal/files.svg"); }
     @media (max-width: 850px) {
       .options2__first-block {
-        background-image: url("../images/third-modal/files-outline.svg"); } }
+        background-image: url("../images/customer-modal/third-modal/files-outline.svg"); } }
   .options2__second-block {
-    background-image: url("../images/third-modal/subscribe.svg"); }
+    background-image: url("../images/customer-modal/third-modal/subscribe.svg"); }
     @media (max-width: 850px) {
       .options2__second-block {
-        background-image: url("../images/third-modal/subscribe-outline.svg"); } }
+        background-image: url("../images/customer-modal/third-modal/subscribe-outline.svg"); } }
   .options2__first-block, .options2__second-block {
     display: -webkit-box;
     display: -ms-flexbox;

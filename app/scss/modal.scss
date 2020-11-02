@@ -90,40 +90,30 @@
 }
 
 
-@import './customer-first-modal';
-@import './customer-second-modal';
-@import './customer-third-modal';
-@import './customer-fourth-modal';
+@import 'customer-modal/customer-first-modal';
+@import 'customer-modal/customer-second-modal';
+@import 'customer-modal/customer-third-modal';
+@import 'customer-modal/customer-fourth-modal';
+
+
+@import 'participant-modal/participant-first-modal';
+@import 'participant-modal/participant-second-modal';
 
 
 
-
-
-.md-participant-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding: 50px;
-  width: 100%;
-  color: #fff;
-  background-color: rgba(49, 132, 135, 0.9);
-  border-radius: 20px;
-}
 
 .md-effect.md-modal {
   perspective: 1300px;
 }
 
-.md-effect .md-participant-content,
+.md-effect .md-participant-content__1,
 .md-effect .md-customer-content__1 {
   transform-style: preserve-3d;
   transform: translateZ(600px) rotateX(20deg);
   opacity: 0;
 }
 
-.md-show.md-effect .md-participant-content,
+.md-show.md-effect .md-participant-content__1,
 .md-show.md-effect .md-customer-content__1 {
   transition: all 0.3s ease-in;
   transform: translateZ(0px) rotateX(0deg);

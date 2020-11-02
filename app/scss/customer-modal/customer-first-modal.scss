@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   background-color: #4BC6EC;
-  background-image: url("../images/first-modal-bg.svg");
+  background-image: url("../../images/customer-modal/first-modal-bg.svg");
 
   @media (max-width: 1220px){
     background-position-y: -150px;
@@ -45,7 +45,7 @@
     &__1 {
       grid-column: 7 / span 3;
       grid-row: 1 / span 2;
-      background-image: url("../images/prozorro-logo.svg");
+      background-image: url("../../images/prozorro-logo.svg");
       background-repeat: no-repeat;
       background-position-x: -15px;
       

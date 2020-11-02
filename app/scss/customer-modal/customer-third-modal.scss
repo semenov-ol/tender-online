@@ -53,26 +53,26 @@
   }
 
   &__first-block {
-    background-image: url("../images/third-modal/bid.svg");
+    background-image: url("../../images/customer-modal/third-modal/bid.svg");
 
     @media (max-width: 850px) {
-      background-image: url("../images/third-modal/bid-outline.svg");
+      background-image: url("../../images/customer-modal/third-modal/bid-outline.svg");
     }
   }
 
   &__second-block {
-    background-image: url("../images/third-modal/support.svg");
+    background-image: url("../../images/customer-modal/third-modal/support.svg");
 
     @media (max-width: 850px) {
-      background-image: url("../images/third-modal/support-outline.svg");
+      background-image: url("../../images/customer-modal/third-modal/support-outline.svg");
     }
   }
 
   &__third-block {
-    background-image: url("../images/third-modal/analytics.svg");
+    background-image: url("../../images/customer-modal/third-modal/analytics.svg");
 
     @media (max-width: 850px) {
-      background-image: url("../images/third-modal/analytics-outline.svg");
+      background-image: url("../../images/customer-modal/third-modal/analytics-outline.svg");
     }
   }
 
@@ -128,18 +128,18 @@
   }
 
   &__first-block {
-    background-image: url("../images/third-modal/files.svg");
+    background-image: url("../../images/customer-modal/third-modal/files.svg");
 
     @media (max-width: 850px) {
-      background-image: url("../images/third-modal/files-outline.svg");
+      background-image: url("../../images/customer-modal/third-modal/files-outline.svg");
     }
   }
 
   &__second-block {
-    background-image: url("../images/third-modal/subscribe.svg");
+    background-image: url("../../images/customer-modal/third-modal/subscribe.svg");
 
     @media (max-width: 850px) {
-      background-image: url("../images/third-modal/subscribe-outline.svg");
+      background-image: url("../../images/customer-modal/third-modal/subscribe-outline.svg");
     }
   }
 
@@ -187,7 +187,7 @@
   height: 70px;
   right: 15px;
   top: 15px;
-  background-image: url("../images/close-icon.svg");
+  background-image: url("../../images/close-icon.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
