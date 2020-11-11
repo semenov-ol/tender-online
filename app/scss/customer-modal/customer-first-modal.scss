@@ -27,7 +27,7 @@
   &_title {
     margin-bottom: 10%;
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 5vh;
     text-align: center;
 
     @media (min-width: 1920px) {
@@ -48,9 +48,10 @@
       bottom: 200px;
     }
 
-    @media (max-width: 1367px) {
+    @media (max-width: 1367px), (max-height: 790px){
       grid-row-gap: 5px;
-
+      position: absolute;
+      top: 200px;
     }
 
     @media (max-width: 960px) {

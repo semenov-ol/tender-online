@@ -46,9 +46,8 @@
       grid-row-gap: 40px;
     }
 
-    @media (max-width: 1367px){
+    @media (max-width: 1367px), (max-height: 790px){
       grid-row-gap: 0;
-
     }
 
     @media (max-width: 1350px){
@@ -68,7 +67,7 @@
       grid-column: 6 / span 6;
       grid-row: 1 / span 2;
 
-      font-size: 30px;
+      font-size: 4vh;
       font-weight: 900;
 
       margin:0;
@@ -95,7 +94,7 @@
       grid-column: 6 / span 6;
       grid-row: 2 / span 2;
 
-      font-size: 20px;
+      font-size: 2vh;
       font-weight: 700;
       text-align: center;
 
@@ -126,23 +125,16 @@
       grid-column: 6 / span 6;
       grid-row: 3 / span 3;
 
-      font-size: 40px;
+      font-size: 4vh;
       font-weight: 700;
       text-align: center;
 
       color: #8347F7;
 
-      @media (max-width: 1415px){
-        font-size: 38px;
-      }
-
       @media (max-width: 1350px){
         grid-column: 3 / span 8;
       }
 
-      @media (max-width: 1250px){
-        font-size: 36px;
-      }
       @media (max-width: 1000px){
         grid-column: 2 / span 10;
       }
@@ -185,7 +177,7 @@
         width: 200px;
         left: 100px;
 
-        background-image: url("../../images/participant-modal/curly-left-arrow.svg");
+        //background-image: url("../../images/participant-modal/curly-left-arrow.svg");
 
         @media (min-width: 1600px) {
           left: 0;
@@ -238,7 +230,7 @@
         width: 30px;
         left: 100px;
 
-        background-image: url("../../images/participant-modal/middle-arrow.svg");
+        //background-image: url("../../images/participant-modal/middle-arrow.svg");
 
         @media (min-width: 1600px) {
           left: 0;
@@ -282,7 +274,7 @@
         width: 200px;
         right: 90px;
 
-        background-image: url("../../images/participant-modal/curly-right-arrow.svg");
+        //background-image: url("../../images/participant-modal/curly-right-arrow.svg");
 
         @media (min-width: 1600px) {
           left: 0;
@@ -347,6 +339,7 @@
       grid-column: 6 / span 6;
       grid-row: 9 / span 1;
       text-align: center;
+      margin-top: auto;
 
       @media (min-width: 1920px){
         font-size: 20px;
