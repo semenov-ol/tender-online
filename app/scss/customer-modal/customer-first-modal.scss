@@ -7,6 +7,10 @@
   background-color: #4BC6EC;
   background-image: url("../../images/customer-modal/first-modal-bg.svg");
 
+  @media (min-width: 1920px) {
+    background-size: 40rem;
+  }
+
   @media (max-width: 1220px){
     background-position-y: -150px;
   }
@@ -25,6 +29,10 @@
     color: #FFFFFF;
     font-size: 40px;
     text-align: center;
+
+    @media (min-width: 1920px) {
+      font-size: 60px;
+    }
   }
 
   .content-container {
@@ -35,12 +43,21 @@
     grid-column-gap: 16px;
     grid-row-gap: 20px;
 
+    @media (min-width: 1920px) {
+      position: absolute;
+      bottom: 200px;
+    }
+
+    @media (max-width: 1367px) {
+      grid-row-gap: 5px;
+
+    }
+
     @media (max-width: 960px) {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
 
     &__1 {
       grid-column: 7 / span 3;
@@ -68,6 +85,7 @@
     &__4 {
       grid-column: 4 / span 3;
       grid-row: 4 / span 1;
+
       @media (max-width: 1300px){
         grid-column: 4 / span 4;
       }
@@ -81,6 +99,7 @@
     &__6 {
       grid-column: 8 / span 4;
       grid-row: 5 / span 1;
+
       @media (max-width: 1300px){
         grid-column: 8 / span 5;
       }
@@ -94,6 +113,10 @@
       font-weight: 400;
       color: #FFFFFF;
 
+      @media (min-width: 1920px) {
+        font-size: 30px;
+      }
+
       @media (max-width: 960px) {
         width: 80%;
         margin-bottom: 70px;
@@ -103,6 +126,10 @@
       @media (max-width: 650px) {
         font-size: 16px;
         margin-bottom: 20px;
+      }
+
+      @media (max-height: 668px) {
+        margin: 0
       }
     }
 
@@ -115,6 +142,10 @@
 
       @media (max-width: 960px) {
         align-self: center;
+      }
+
+      @media (max-height: 668px) {
+        font-size: 26px;
       }
     }
 

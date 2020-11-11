@@ -14,12 +14,32 @@
   background-color: #76D4B4;
   border-radius: 20px;
 
+  @media (max-width: 850px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 550px) {
+    justify-content: start;
+
+    width: 100vw;
+    height: calc(100vh - 100px);
+    bottom: 0;
+  }
+
   .options1__third-block{
     background-image: url("../../images/participant-modal/gear.svg");
+
+    @media (max-width: 850px) {
+      background-image: url("../../images/participant-modal/gear-outline.svg");
+    }
   }
 
   .options2__first-block {
-    width: 70%;
+    width: 50%;
+
+    @media (max-width: 850px) {
+      width: 80%;
+    }
   }
 }
 

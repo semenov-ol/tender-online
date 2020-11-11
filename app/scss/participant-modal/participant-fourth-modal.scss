@@ -6,7 +6,7 @@
   justify-content: space-evenly;
 
   width: calc(100vw - 160px);
-  height: calc(100vh - 125px);
+  height: calc(100vh - 120px);
 
   bottom: 0;
 
@@ -15,6 +15,10 @@
   border-radius: 20px;
 
   z-index: 0;
+
+  @media (max-width: 550px) {
+    width: 100vw;
+  }
 
   .video-container {
     display: grid;
@@ -25,40 +29,80 @@
 
     &__description {
       grid-column: 2 / span 3;
-      grid-row: 4 / span 3;
+      grid-row: 3 / span 6;
 
       font-size: 35px;
       font-weight: 700;
 
       color: #FAFD07;
       text-align: center;
+
+      @media (max-width: 1250px) {
+        grid-column: 2 / span 10;
+        grid-row: 2 / span 2;
+      }
+
+      @media (max-width: 930px) {
+        font-size: 30px;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 25px;
+      }
     }
 
     &__title {
       grid-column: 7 / span 2;
-      grid-row: 2 / span 1;
+      grid-row: 1 / span 1;
 
       font-size: 40px;
       font-weight: 900;
       text-align: center;
-    }
+
+      color: var(--secondary-color);
+
+      @media (max-width: 1250px) {
+        grid-column: 4 / span 6;
+        margin-bottom: 25px
+      }
+      }
 
     &__video {
       grid-column: 5 / span 6;
-      grid-row: 3 / span 6;
+      grid-row: 2 / span 6;
 
       width: 680px;
       height: 415px;
 
       background-image: url("../../images/participant-modal/video-test.svg");
       background-repeat: no-repeat;
+
+      @media (max-width: 1250px) {
+        grid-column: 2 / span 10;
+        grid-row: 4 / span 6;
+
+        background-size: 35rem ;
+
+        margin: 0 auto ;
+
+        width: 580px;
+        height: 350px;
+      }
+
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
 
     &__button {
       grid-column: 6 / span 4;
-      grid-row: 8 / span 1;
+      grid-row: 9 / span 1;
 
       text-align: center;
+
+      @media (max-width: 1250px) {
+        grid-column: 2 / span 10;
+      }
     }
   }
 }

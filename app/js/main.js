@@ -56,46 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }];
 
     const closeButtonsId = ["modal-close", "modal-close-2", "modal-close-3", "modal-close-4", "modal-close5", "modal-close6", "modal-close7","modal-close8"];
-
-
-    identifiers.forEach(identifier => {
-        const modal = document.getElementById(identifier.modal);
-        const button = document.getElementById(identifier.button);
-        const wrapper = document.getElementById(identifier.wrapper);
-
-        closeButtonsId.forEach(closeButtonId => {
-            const button = document.getElementById(closeButtonId);
-
-            button.addEventListener("click", () => {
-                modal.classList.remove("md-show");
-                wrapper.classList.remove("show-wrapper");
-            });
-        });
-
-        button.addEventListener("click", () => {
-            modal.classList.add("md-show");
-            wrapper.classList.add("show-wrapper");
-
-          modalElements.forEach(modalElement => {
-
-
-            const element2 = document.getElementById(modalElement.element2);
-            const element3 = document.getElementById(modalElement.element3);
-            const element4 = document.getElementById(modalElement.element4);
-
-            element2.style.top = `${top + 20}px`;
-            element3.style.top = `${top + 45}px`;
-            element4.style.top = `${top + 70}px`;
-
-            if (document.documentElement.clientWidth < 550) {
-              element2.style.top = `${top + 40}px`;
-              element3.style.top = `${top + 55}px`;
-              element4.style.top = `${top + 75}px`;
-            }
-          })
-        });
-    });
-
     const modalElements = [
         {
             element1: "md-customer-content__1",
@@ -103,27 +63,90 @@ document.addEventListener("DOMContentLoaded", () => {
             element3: "md-customer-content__3",
             element4: "md-customer-content__4"
         },
-        // {
-        //     element1: "md-participant-content__1",
-        //     element2: "md-participant-content__2",
-        //     element3: "md-participant-content__3",
-        //     element4: "md-participant-content__4"
-        // }
+        {
+            element1: "md-participant-content__1",
+            element2: "md-participant-content__2",
+            element3: "md-participant-content__3",
+            element4: "md-participant-content__4"
+        }
     ];
 
+    identifiers.forEach(identifier => {
+        const modal = document.getElementById(identifier.modal);
+        const button = document.getElementById(identifier.button);
+        const wrapper = document.getElementById(identifier.wrapper);
+
+        closeButtonsId.forEach(closeButtonId => {
+            const closeButton = document.getElementById(closeButtonId);
+
+            closeButton.addEventListener("click", () => {
+                modal.classList.remove("md-show");
+                wrapper.classList.remove("show-wrapper");
+
+                modalElements.forEach(modalElement => {
+                    const element1 = document.getElementById(modalElement.element1);
+                    const element2 = document.getElementById(modalElement.element2);
+                    const element3 = document.getElementById(modalElement.element3);
+                    const element4 = document.getElementById(modalElement.element4);
+
+                    const style = window.getComputedStyle(element1);
+
+                    const top = style.height.slice(0, -2) - 0.1 * style.height.slice(0, -2);
+
+                    element2.style.top = `${top + 20}px`;
+                    element3.style.top = `${top + 45}px`;
+                    element4.style.top = `${top + 70}px`;
+
+                    if (document.documentElement.clientWidth < 550) {
+                        element2.style.top = `${top + 40}px`;
+                        element3.style.top = `${top + 55}px`;
+                        element4.style.top = `${top + 75}px`;
+                    }
+                })
+            });
+
+
+        });
+
+        button.addEventListener("click", () => {
+            modal.classList.add("md-show");
+            wrapper.classList.add("show-wrapper");
+
+            modalElements.forEach(modalElement => {
+                const element1 = document.getElementById(modalElement.element1);
+                const element2 = document.getElementById(modalElement.element2);
+                const element3 = document.getElementById(modalElement.element3);
+                const element4 = document.getElementById(modalElement.element4);
+
+                const style = window.getComputedStyle(element1);
+
+                const top = style.height.slice(0, -2) - 0.1 * style.height.slice(0, -2);
+
+                element2.style.top = `${top + 20}px`;
+                element3.style.top = `${top + 45}px`;
+                element4.style.top = `${top + 70}px`;
+
+                if (document.documentElement.clientWidth < 550) {
+                    element2.style.top = `${top + 40}px`;
+                    element3.style.top = `${top + 55}px`;
+                    element4.style.top = `${top + 75}px`;
+                }
+            })
+
+        });
+    });
+
+
+
     modalElements.forEach(modalElement => {
-
-
         const element1 = document.getElementById(modalElement.element1);
         const element2 = document.getElementById(modalElement.element2);
         const element3 = document.getElementById(modalElement.element3);
         const element4 = document.getElementById(modalElement.element4);
 
-
         const style = window.getComputedStyle(element1);
 
         const top = style.height.slice(0, -2) - 0.1 * style.height.slice(0, -2);
-
 
         element2.style.top = `${top + 20}px`;
         element3.style.top = `${top + 45}px`;

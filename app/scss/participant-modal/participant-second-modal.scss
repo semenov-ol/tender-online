@@ -17,18 +17,21 @@
   background-image: url("../../images/participant-modal/thumbs-up.svg");
   background-repeat: no-repeat;
 
+  @media (min-width: 1920px){
+    background-size: 50rem;
+  }
+
   @media (max-width: 1350px){
     background-image: none;
   }
 
   @media (max-width: 650px){
     background-image: url("../../images/participant-modal/thumbs-up-small.svg");
-    background-position-y: 100% ;
+    background-position-y: 90% ;
   }
 
   @media (max-width: 550px) {
     width: 100vw;
-
   }
 
   .choose-container {
@@ -37,20 +40,33 @@
     grid-template-rows: repeat(9, 1fr);
 
     grid-column-gap: 16px;
-    grid-row-gap: 20px;
+    grid-row-gap: 25px;
 
     @media (min-width: 1636px) {
       grid-row-gap: 40px;
+    }
+
+    @media (max-width: 1367px){
+      grid-row-gap: 0;
+
     }
 
     @media (max-width: 1350px){
       grid-template-rows: repeat(10, 1fr);
     }
 
+    @media (max-width: 450px){
+      grid-row-gap: 40px;
+    }
+
+    @media (max-width: 415px){
+      grid-row-gap: 25px;
+    }
+
 
     &__title {
       grid-column: 6 / span 6;
-      grid-row: 1 / span 1;
+      grid-row: 1 / span 2;
 
       font-size: 30px;
       font-weight: 900;
@@ -59,25 +75,35 @@
 
       text-align: center;
 
+      @media (min-width: 1920px){
+        grid-column: 5 / span 7;
+
+        font-size: 60px;
+      }
+
       @media (max-width: 1350px){
         grid-column: 3 / span 8;
       }
+
       @media (max-width: 850px){
         grid-column: 3 / span 8;
         font-size: 25px;
-
       }
-
-
     }
 
     &__description {
       grid-column: 6 / span 6;
-      grid-row: 2 / span 1;
+      grid-row: 2 / span 2;
 
       font-size: 20px;
       font-weight: 700;
       text-align: center;
+
+      @media (min-width: 1920px){
+        grid-column: 5 / span 7;
+
+        font-size: 30px;
+      }
 
       @media (max-width: 1350px){
         grid-column: 3 / span 8;
@@ -124,7 +150,6 @@
       @media (max-width: 850px){
         font-size: 20px;
       }
-
     }
 
     &__2 {
@@ -137,6 +162,7 @@
       }
 
       @media (max-width: 1250px){
+        grid-row: 7 / span 3;
         grid-column: 2 / span 3;
       }
 
@@ -160,6 +186,12 @@
         left: 100px;
 
         background-image: url("../../images/participant-modal/curly-left-arrow.svg");
+
+        @media (min-width: 1600px) {
+          left: 0;
+          top: -100px;
+          background-image: url('../../images/participant-modal/1-big.svg');
+        }
 
         @media (max-width: 1415px) {
           left: 0;
@@ -208,6 +240,12 @@
 
         background-image: url("../../images/participant-modal/middle-arrow.svg");
 
+        @media (min-width: 1600px) {
+          left: 0;
+          top: -100px;
+          background-image: url('../../images/participant-modal/2-big.svg');
+        }
+
         @media (max-width: 1415px) {
           left: 0;
           top: -100px;
@@ -237,7 +275,7 @@
       @media (max-width: 650px) {
         grid-row: 9 / span 2;
 
-        grid-column: 5 / span 7;
+        grid-column: 6 / span 6;
       }
 
       &:before {
@@ -245,6 +283,12 @@
         right: 90px;
 
         background-image: url("../../images/participant-modal/curly-right-arrow.svg");
+
+        @media (min-width: 1600px) {
+          left: 0;
+          top: -100px;
+          background-image: url('../../images/participant-modal/3-big.svg');
+        }
 
         @media (max-width: 1415px) {
           left: 0;
@@ -266,6 +310,10 @@
 
       text-align: center;
 
+      @media (min-width: 1920px){
+        font-size: 24px;
+      }
+
       @media (max-width: 550px) {
         font-size: 14px;
       }
@@ -283,6 +331,11 @@
         height: 100px;
         background-repeat: no-repeat;
 
+
+        @media (min-width: 1600px) {
+          height: 400px;
+          width: 200px;
+        }
         @media (max-width: 1415px) {
           height: 400px;
           width: 200px;
@@ -295,15 +348,30 @@
       grid-row: 9 / span 1;
       text-align: center;
 
+      @media (min-width: 1920px){
+        font-size: 20px;
+      }
+
       @media (max-width: 1350px) {
         grid-column: 7 / span 6;
         grid-row: 10 / span 1;
       }
 
-      @media (max-width: 550px) {
-        grid-column: 6 / span 6;
+      @media (max-width: 650px) {
+        grid-row: 10 / span 1;
+        grid-column: 2 / span 4;
         font-size: 14px;
+      }
 
+      @media (max-width: 550px) {
+        grid-column: 2 / span 4;
+        font-size: 14px;
+      }
+
+      @media (max-width: 450px) {
+        grid-column: 2 / span 6;
+
+        font-size: 14px;
       }
 
       &_link {
