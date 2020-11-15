@@ -94,6 +94,10 @@
       font-size: 60px;
     }
 
+    @media (max-height: 950px) and (min-width: 1920px) {
+      font-size: 5vh;
+    }
+
     @media (max-width: 800px) {
       grid-column: 4 / span 6;
       text-align: center;
@@ -157,7 +161,7 @@
     grid-column: 6 / span 6;
     grid-row: 3 / span 2;
 
-    font-weight: 700;
+    font-weight: 400;
 
     @media (max-width: 800px) {
       grid-column: 3 / span 8;
@@ -194,7 +198,7 @@
     grid-column: 6 / span 3;
     grid-row: 5 / span 2;
 
-    font-weight: 700;
+    font-weight: 400;
 
     @media (max-width: 800px) {
       grid-column: 2 / span 5;
@@ -220,7 +224,7 @@
     grid-column: 9 / span 3;
     grid-row: 5 / span 2;
 
-    font-weight: 700;
+    font-weight: 400;
 
     @media (max-width: 800px) {
       grid-column: 7 / span 5;
@@ -233,7 +237,7 @@
   }
 
   &__8 {
-    grid-column: 5 / span 4;
+    grid-column: 5 / span 5;
     grid-row: 6 / span 1;
 
     margin-top: 5vh;
@@ -242,7 +246,7 @@
 
 
     @media (max-height: 790px) {
-      margin-top: 4vh;
+      margin-top: 7vh;
 
     }
 
@@ -271,8 +275,7 @@
 
       cursor: pointer;
       &:hover {
-        background-color: transparent;
-        color: var(--secondary-color)
+        background-color: #b83948;
       }
     }
   }
@@ -284,6 +287,10 @@
 
     @media (min-width: 1920px){
       font-size: 30px;
+    }
+
+    @media (max-height: 950px) and (min-width: 1920px) {
+      font-size: 3vh;
     }
 
     @media (max-width: 800px) {
@@ -307,6 +314,10 @@
 
     @media (min-width: 1920px){
       font-size: 50px;
+    }
+
+    @media (max-height: 950px) and (min-width: 1920px) {
+      font-size: 5vh;
     }
   }
 }

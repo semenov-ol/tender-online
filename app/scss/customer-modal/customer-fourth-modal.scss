@@ -32,7 +32,7 @@
     width: 100%;
     height: 100%;
     background-image: url("../../images/customer-modal/fourth-modal-bg.svg");
-    background-position-y: -20% ;
+    background-position-y: -25% ;
     background-repeat: no-repeat;
 
     @media (max-width: 1150px) {
@@ -55,6 +55,10 @@
 
   @media (max-width: 1367px), (max-height: 790px) {
     grid-row-gap: 40px;
+  }
+
+  @media (max-height: 950px) and (min-width: 1920px) {
+      grid-row-gap: 30px;
   }
 
     @media (max-width: 1150px) {
@@ -142,9 +146,8 @@
 
 
       &:hover {
-        color: var(--secondary-color);
-        border: 2px solid #DB4356;;
-        background-color:transparent;
+        border: 2px solid #b83948;
+        background-color: #b83948;
       }
 
       @media (max-width: 550px) {
@@ -163,6 +166,10 @@
       font-size: 30px;
     }
 
+    @media (max-height: 950px) and (min-width: 1920px) {
+        font-size: 3vh;
+      }
+
     @media (max-width: 700px){
       font-size: 16px;
     }
@@ -176,6 +183,10 @@
       font-size: 40px;
       font-weight: 700;
       margin: 0 10px;
+
+      @media (max-height: 950px) and (min-width: 1920px) {
+        font-size: 5vh;
+      }
 
       @media (min-width: 1920px) {
         font-size: 60px;

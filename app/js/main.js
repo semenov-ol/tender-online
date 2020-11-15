@@ -142,6 +142,12 @@ document.addEventListener("DOMContentLoaded", () => {
           element2.style.top = `${top + 10}px`;
           element3.style.top = `${top + 30}px`;
           element4.style.top = `${top + 50}px`;
+
+          if (document.documentElement.clientWidth < 550) {
+            element2.style.top = `${top + 40}px`;
+            element3.style.top = `${top + 55}px`;
+            element4.style.top = `${top + 75}px`;
+          }
         }
       });
 
@@ -181,23 +187,29 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-      function debounce(func, wait, immediate) {
-          let timeout = null;
-          return function () {
-              let context = this, args = arguments;
-              clearTimeout(timeout);
-              timeout = setTimeout(function () {
-                  timeout = null;
-                  if (!immediate) {
-                      func.apply(context, args);
-                  }
-              }, wait);
+    function debounce(func, wait, immediate) {
+      let timeout;
 
-              if (immediate && !timeout) {
-                  func.apply(context, args);
-              }
-          };
-      }
+      return function executedFunction() {
+        const context = this;
+        const args = arguments;
+
+        const later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+
+        const callNow = immediate && !timeout;
+
+        clearTimeout(timeout);
+
+        timeout = setTimeout(later, wait);
+
+        if (callNow) func.apply(context, args);
+      };
+    };
+
+
 
     // on ArrowDown, ArrowUp scroll
     window.addEventListener("keydown", (e) => {
@@ -207,11 +219,14 @@ document.addEventListener("DOMContentLoaded", () => {
           element2.style.top = `22px`;
         }
         if (e.key === "ArrowUp" && element3.offsetTop !== 42) {
-          if (window.innerWidth < 550) {
-            element2.style.top = `${top + 40}px`;
-          }
+
           if (window.innerHeight < 850) {
             element2.style.top = `${top + 10}px`;
+
+            if (window.innerWidth < 550) {
+              console.log(11);
+              element2.style.top = `${top + 40}px`;
+            }
           } else {
             element2.style.top = `${top + 20}px`;
           }
@@ -223,11 +238,13 @@ document.addEventListener("DOMContentLoaded", () => {
           element3.style.top = `42px`;
         }
         if (e.key === "ArrowUp" && element4.offsetTop !== 64) {
-          if (window.innerWidth < 550) {
-            element3.style.top = `${top + 55}px`;
-          }
+
           if (window.innerHeight < 850) {
             element3.style.top = `${top + 30}px`;
+
+            if (window.innerWidth < 550) {
+              element3.style.top = `${top + 55}px`;
+            }
           } else {
             element3.style.top = `${top + 45}px`;
           }
@@ -239,11 +256,13 @@ document.addEventListener("DOMContentLoaded", () => {
           element4.style.top = `64px`;
         }
         if (e.key === "ArrowUp") {
-          if (window.innerWidth < 550) {
-            element4.style.top = `${top + 75}px`;
-          }
+
           if (window.innerHeight < 850) {
             element4.style.top = `${top + 50}px`;
+
+            if (window.innerWidth < 550) {
+              element4.style.top = `${top + 75}px`;
+            }
           } else {
             element4.style.top = `${top + 70}px`;
           }
@@ -252,21 +271,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    let trottledWheelEvent = (e) => debounce(onWheelEvent, 2000);
     // on wheel scroll
-    window.addEventListener("wheel", trottledWheelEvent);
+    window.addEventListener("wheel", debounce(onWheelEvent, 37.5, true));
+    // on wheel scroll
 
     function onWheelEvent(e) {
-      console.log(1);
       if (e.deltaY > 0) {
         element2.style.top = `22px`;
       }
       if (e.deltaY < 0 && element3.offsetTop !== 42) {
-        if (window.innerWidth < 550) {
-          element2.style.top = `${top + 40}px`;
-        }
+
         if (window.innerHeight < 850) {
           element2.style.top = `${top + 10}px`;
+
+          if (window.innerWidth < 550) {
+            element2.style.top = `${top + 40}px`;
+          }
         } else {
           element2.style.top = `${top + 20}px`;
         }
@@ -277,11 +297,13 @@ document.addEventListener("DOMContentLoaded", () => {
           element3.style.top = `42px`;
         }
         if (e.deltaY < 0 && element4.offsetTop !== 64) {
-          if (window.innerWidth < 550) {
-            element3.style.top = `${top + 55}px`;
-          }
+
           if (window.innerHeight < 850) {
             element3.style.top = `${top + 30}px`;
+
+            if (window.innerWidth < 550) {
+              element3.style.top = `${top + 55}px`;
+            }
           } else {
             element3.style.top = `${top + 45}px`;
           }
@@ -293,11 +315,13 @@ document.addEventListener("DOMContentLoaded", () => {
           element4.style.top = `64px`;
         }
         if (e.deltaY < 0) {
-          if (window.innerWidth < 550) {
-            element4.style.top = `${top + 75}px`;
-          }
+
           if (window.innerHeight < 850) {
             element4.style.top = `${top + 50}px`;
+
+            if (window.innerWidth < 550) {
+              element4.style.top = `${top + 75}px`;
+            }
           } else {
             element4.style.top = `${top + 70}px`;
           }
@@ -359,11 +383,13 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
 
           if (element3.offsetTop === 42) {
-            if (window.innerWidth < 550) {
-              element4.style.top = `${top + 75}px`;
-            }
+
             if (window.innerHeight < 850) {
               element4.style.top = `${top + 50}px`;
+
+              if (window.innerWidth < 550) {
+                element4.style.top = `${top + 75}px`;
+              }
             } else {
               element4.style.top = `${top + 70}px`;
             }
@@ -371,11 +397,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
           if (element4.offsetTop !== 64) {
-            if (window.innerWidth < 550) {
-              element3.style.top = `${top + 55}px`;
-            }
+
             if (window.innerHeight < 850) {
               element3.style.top = `${top + 30}px`;
+
+              if (window.innerWidth < 550) {
+                element3.style.top = `${top + 55}px`;
+              }
             } else {
               element3.style.top = `${top + 45}px`;
             }
@@ -383,11 +411,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
           if (element3.offsetTop !== 42) {
-            if (window.innerWidth < 550) {
-              element2.style.top = `${top + 40}px`;
-            }
+
             if (window.innerHeight < 850) {
               element2.style.top = `${top + 10}px`;
+
+              if (window.innerWidth < 550) {
+                element2.style.top = `${top + 40}px`;
+              }
             } else {
               element2.style.top = `${top + 20}px`;
             }
