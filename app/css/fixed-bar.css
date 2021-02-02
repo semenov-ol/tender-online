@@ -2,12 +2,12 @@
 .actions {
   position: fixed;
   top: 50vh;
-  -webkit-transform: translateY(-70%);
-  transform: translateY(-70%);
-  right: 55px; }
+  -webkit-transform: translate(-100%, -70%);
+  transform: translate(-100%, -70%);
+  left: calc(100% - 55px); }
   @media (max-width: 1080px) {
     .actions {
-      right: 15px; } }
+      left: calc(100% - 25px); } }
 
 .actions-list {
   margin: 0; }
@@ -51,19 +51,19 @@
       content: 'Зареєструватися';
       width: 150px;
       height: 35px;
-      left: 120px; }
+      left: 300px; }
     .actions-list__button_registration:hover:after {
       left: -120px;
       -webkit-transition: ease-out 0.3s;
       transition: ease-out 0.3s; }
   .actions-list__button_login {
-    background-image: url("../images/login.svg");
+    background-image: url("../images/login-white.svg");
     background-position-x: 50%; }
     .actions-list__button_login:after {
       content: 'Увійти';
       width: 100px;
       height: 35px;
-      left: 150px; }
+      left: 300px; }
     .actions-list__button_login:hover:after {
       left: -70px;
       -webkit-transition: ease-out 0.3s;

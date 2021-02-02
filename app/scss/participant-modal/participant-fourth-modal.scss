@@ -37,6 +37,7 @@
       color: #FAFD07;
       text-align: center;
 
+
       @media (max-width: 1250px) {
         grid-column: 2 / span 10;
         grid-row: 2 / span 2;
@@ -75,8 +76,11 @@
       width: 680px;
       height: 415px;
 
-      background-image: url("../../images/participant-modal/video-test.svg");
       background-repeat: no-repeat;
+
+      @media (max-height: 950px) and (min-width: 1920px) {
+        grid-column: 6 / span 6;
+      }
 
       @media (max-height: 790px) {
         background-size: 30rem ;
@@ -89,6 +93,8 @@
         grid-column: 2 / span 10;
         grid-row: 4 / span 6;
 
+        text-align: center;
+
         background-size: 35rem ;
 
         margin: 0 auto ;
@@ -98,7 +104,36 @@
       }
 
       @media (max-width: 800px) {
-        display: none;
+        grid-column: 1 / span 10;
+      }
+
+      @media (max-width: 650px) {
+        grid-column: 3 / span 2;
+        text-align: start;
+      }
+
+      @media (max-width: 375px) and (min-height: 812px) {
+        grid-column: 2 / span 2;
+      }
+
+      iframe {
+        @media (max-width: 1250px) {
+          width: 500px;
+          height: 280px;
+        }
+        @media (max-width: 880px) {
+          width: 400px;
+          height: 220px;
+        }
+
+        @media (max-width: 650px) {
+          width: 310px;
+          height: 190px;
+        }
+
+        @media (max-width: 414px) and (max-height: 736px) {
+          width: 280px;
+        }
       }
     }
 
@@ -112,6 +147,37 @@
 
       @media (max-width: 1250px) {
         grid-column: 2 / span 10;
+      }
+    }
+
+    &__button-more {
+      grid-column: 2 / span 3;
+      grid-row: 7 / span 1;
+      text-align: center;
+
+      font-size: 16px;
+
+      @media (max-width: 1250px) {
+        text-align: start;
+      }
+
+      @media (max-width: 1000px) {
+        grid-column: 2 / span 1;
+        text-align: center;
+      }
+
+      @media (max-width: 800px) {
+        grid-column: 6 / span 2;
+        grid-row: 8 / span 1;
+      }
+
+      @media (max-width: 500px) {
+        grid-column: 5 / span 4;
+      }
+
+      &_link {
+        text-decoration: none;
+        color: coral;
       }
     }
   }

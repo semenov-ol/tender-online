@@ -85,6 +85,7 @@
     width: 80px;
     height: 80px;
 
+
     margin-top:12px;
 
     background-repeat: no-repeat;
@@ -100,7 +101,7 @@
 
   &__roles_customer {
     margin-top: 10px;
-    background-image: url("../images/customer.svg");
+    background-image: url("../images/customer.svg") ;
 
     @media (max-width: 600px) {
       right: 0;

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     BLOB_DISTANCE: 0,
     DETALISATION: 60,
     PERSPECTIVE_DISTORTION: 5,
-    ROTATION_SPEED: 2,
+    ROTATION_SPEED: 1.4,
 
     DOT_SIZE: 1,
     DOT_COLOR: "gray",
@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
     USE_WAVE_MOTION: true,
     USE_WAVE_SWING: false,
 
-    WAVE_1_MOTION_SPEED: 0.35,
-    WAVE_2_MOTION_SPEED: 0.3,
-    WAVE_3_MOTION_SPEED: 0.5
+    WAVE_1_MOTION_SPEED: 0.25,
+    WAVE_2_MOTION_SPEED: 0.2,
+    WAVE_3_MOTION_SPEED: 0.3
   };
 
   const animation = new TenderOnlineAnimation("animation_container", preset);
@@ -174,18 +174,6 @@ document.addEventListener("DOMContentLoaded", () => {
       element3.style.top = `${top + 55}px`;
       element4.style.top = `${top + 75}px`;
     }
-
-    window.addEventListener("resize", () => {
-      if (window.innerWidth < 550) {
-        element2.style.top = `${top + 40}px`;
-        element3.style.top = `${top + 65}px`;
-        element4.style.top = `${top + 90}px`;
-      } else {
-        element2.style.top = `${top + 20}px`;
-        element3.style.top = `${top + 45}px`;
-        element4.style.top = `${top + 70}px`;
-      }
-    });
 
     function debounce(func, wait, immediate) {
       let timeout;
@@ -430,8 +418,12 @@ document.addEventListener("DOMContentLoaded", () => {
       xDown = null;
       yDown = null;
     }
-
-
   });
 
 });
+
+
+window.onresize = function() {
+  document.body.height = window.innerHeight;
+}
+window.onresize();

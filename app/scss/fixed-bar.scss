@@ -1,11 +1,13 @@
 .actions {
   position: fixed;
   top: 50vh;
-  transform: translateY(-70%);
-  right: 55px;
+  transform: translate(-100%, -70%);
+  left: calc(100% - 55px);
+  // right: 55px;
 
   @media (max-width: 1080px) {
-    right: 15px;
+    // right: 15px;
+    left: calc(100% - 25px);
   }
 }
 
@@ -67,7 +69,7 @@
      content: 'Зареєструватися';
      width: 150px;
      height:35px;
-     left: 120px;
+     left: 300px;
    }
 
     &:hover {
@@ -79,14 +81,14 @@
   }
 
   &__button_login {
-    background-image: url("../images/login.svg");
+    background-image: url("../images/login-white.svg");
     background-position-x: 50% ;
 
     &:after {
       content: 'Увійти';
       width: 100px;
       height:35px;
-      left: 150px;
+      left: 300px;
     }
 
     &:hover {
